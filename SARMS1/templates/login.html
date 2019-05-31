@@ -1,0 +1,45 @@
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span12">
+			<h3>
+				SARMS
+			</h3>
+			<p>
+				Student-At-Risk Monitoring System
+			</p>
+		</div>
+	</div>
+	<hr/>
+	<ul style="position:fixed; left: 50%; top: 50%; margin: -150px 0 0 -200px;"   >
+	<div class="row-fluid">
+		<div class="span4">
+		</div>
+		<div class="span4">
+			<form class="form-horizontal" action="/login/" method="post">
+                {% csrf_token %}
+				<div class="control-group">
+					<label class="control-label" for="inputEmail">Username</label>
+					<div class="controls">
+						<input id="inputEmail" type="text" name="user" />
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="inputPassword">Password</label>
+					<div class="controls">
+						<input id="inputPassword" type="password" name="pwd"/>
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="controls">
+
+						<br>
+						<button class="btn" type="submit">Login</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="span4">
+		</div>
+	</div>
+	</ul>
+</div>

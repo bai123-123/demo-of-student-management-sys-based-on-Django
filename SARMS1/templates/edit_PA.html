@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        input{
+            width: 60px;
+
+        }
+    </style>
+</head>
+<body>
+<form method="post" action="/edit_AP/">
+        {% csrf_token %}
+        <input type="text" name="id" value="{{ stu.student_ID }}" style="display: none">
+         <table border="1">
+            <thead>
+            <tr>
+                <tr>
+                 attendance/performance
+                </tr>
+            </tr>
+                <tr>
+                    <th>week1</th>
+                     <th>week2</th>
+                     <th>week3</th>
+                     <th>week4</th>
+                     <th>week5</th>
+                     <th>week6</th>
+                     <th>week7</th>
+                     <th>week8</th>
+                     <th>week9</th>
+                     <th>week10</th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+
+                             <td>
+                                 <select name="w1a">
+                                        <option selected>{{ ap.week1_A }}</option>
+                                        <option value="attend">attend</option>
+                                        <option value="miss">miss</option>
+                                 </select>
+
+                             /
+                                 <select name="w1p">
+                                        <option selected>{{ ap.week1_p }}</option>
+                                        <option value="HD">HD</option>
+                                        <option value="D">D</option>
+                                        <option value="C">C</option>
+                                         <option value="B">B</option>
+                                 </select>
+                             </td>
+                             <td>
+                             <select name="w2a">
+                                        <option selected>{{ ap.week2_A }}</option>
+                                        <option value="attend">attend</option>
+                                        <option value="miss">miss</option>
+                                 </select>
+
+                             /
+                                 <select name="w2p">
+                                        <option selected>{{ ap.week2_p }}</option>
+                                        <option value="HD">HD</option>
+                                        <option value="D">D</option>
+                                        <option value="C">C</option>
+                                         <option value="B">B</option>
+                                 </select>
+                             </td>
+                             </td>
+                             <td>
+                             <select name="w3a">
+                                        <option selected>{{ ap.week3_A }}</option>
+                                        <option value="attend">attend</option>
+                                        <option value="miss">miss</option>
+                                 </select>
+
+                             /
+                                 <select name="w3p">
+                                        <option selected>{{ ap.week3_p }}</option>
+                                        <option value="HD">HD</option>
+                                        <option value="D">D</option>
+                                        <option value="C">C</option>
+                                         <option value="B">B</option>
+                                 </select>
+                             </td>
+                             </td>
+                              <td>
+                            <select name="w4a">
+                                        <option selected>{{ ap.week4_A }}</option>
+                                        <option value="attend">attend</option>
+                                        <option value="miss">miss</option>
+                                 </select>
+
+                             /
+                                 <select name="w4p">
+                                        <option selected>{{ ap.week4_p }}</option>
+                                        <option value="HD">HD</option>
+                                        <option value="D">D</option>
+                                        <option value="C">C</option>
+                                         <option value="B">B</option>
+                                 </select>
+                             </td>
+                             </td>
+                             <td>
+                             <select name="w5a">
+                                        <option selected>{{ ap.week5_A }}</option>
+                                        <option value="attend">attend</option>
+                                        <option value="miss">miss</option>
+                                 </select>
+
+                             /
+                                 <select name="w5p">
+                                        <option selected>{{ ap.week5_p }}</option>
+                                        <option value="HD">HD</option>
+                                        <option value="D">D</option>
+                                        <option value="C">C</option>
+                                         <option value="B">B</option>
+                                 </select>
+                             </td>
+                             </td>
+                             <td>
+                             <select name="w6a">
+                                        <option selected>{{ ap.week6_A }}</option>
+                                        <option value="attend">attend</option>
+                                        <option value="miss">miss</option>
+                                 </select>
+
+                             /
+                                 <select name="w6p">
+                                        <option selected>{{ ap.week6_p }}</option>
+                                        <option value="HD">HD</option>
+                                        <option value="D">D</option>
+                                        <option value="C">C</option>
+                                         <option value="B">B</option>
+                                 </select>
+                             </td>
+                             </td>
+                              <td>
+                             <select name="w7a">
+                                        <option selected>{{ ap.week7_A }}</option>
+                                        <option value="attend">attend</option>
+                                        <option value="miss">miss</option>
+                                 </select>
+
+                             /
+                                 <select name="w7p">
+                                        <option selected>{{ ap.week7_p }}</option>
+                                        <option value="HD">HD</option>
+                                        <option value="D">D</option>
+                                        <option value="C">C</option>
+                                         <option value="B">B</option>
+                                 </select>
+                             </td>
+                             </td>
+                              <td>
+                             <select name="w8a">
+                                        <option selected>{{ ap.week8_A }}</option>
+                                        <option value="attend">attend</option>
+                                        <option value="miss">miss</option>
+                                 </select>
+
+                             /
+                                 <select name="w8p">
+                                        <option selected>{{ ap.week8_p }}</option>
+                                        <option value="HD">HD</option>
+                                        <option value="D">D</option>
+                                        <option value="C">C</option>
+                                         <option value="B">B</option>
+                                 </select>
+                             </td>
+                             </td>
+                              <td>
+                            <select name="w9a">
+                                        <option selected>{{ ap.week9_A }}</option>
+                                        <option value="attend">attend</option>
+                                        <option value="miss">miss</option>
+                                 </select>
+
+                             /
+                                 <select name="w9p">
+                                        <option selected>{{ ap.week9_p }}</option>
+                                        <option value="HD">HD</option>
+                                        <option value="D">D</option>
+                                        <option value="C">C</option>
+                                         <option value="B">B</option>
+                                 </select>
+                             </td>
+                             </td>
+                             <td>
+                            <select name="w10a">
+                                        <option selected>{{ ap.week10_A }}</option>
+                                        <option value="attend">attend</option>
+                                        <option value="miss">miss</option>
+                                 </select>
+
+                             /
+                                 <select name="w10p">
+                                        <option selected>{{ ap.week10_p }}</option>
+                                        <option value="HD">HD</option>
+                                        <option value="D">D</option>
+                                        <option value="C">C</option>
+                                         <option value="B">B</option>
+                                 </select>
+                             </td>
+                             </td>
+
+
+
+
+
+                </tr>
+
+            </tbody>
+
+        </table>
+        <div>
+             <a href="/AP?nid={{ stu.student_ID }}"><input type="submit" value="save"></a>
+        </div>
+
+    </form>
+
+</body>
+</html>

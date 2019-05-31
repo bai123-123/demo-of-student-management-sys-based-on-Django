@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        #block1{
+            width: 600px;
+            height: 300px;
+        }
+        #block2{
+            width: 200px;
+            height: 800px;
+        }
+    </style>
+
+</head>
+<body>
+<h3>SARMS</h3>
+
+ <div>
+     <form method="post" action="/edit_FC/">
+         {% csrf_token %}
+          <input type="text" name="id" value="{{ st.student_ID }}" style="display: none">
+        <table border="1">
+            <thead>
+            <tr>
+                <tr>
+                    Unit: SIT321
+                </tr>
+                <tr>
+                 {{ st.student_name }}: Feedback and comments
+                    {{ st.student_ID }}
+                </tr>
+            </tr>
+
+            </thead>
+            <tbody>
+
+                <tr>
+                <td id="block1">
+
+                    <input type="text" name="fd" value="{{ fc.feedback}}">
+                </td>
+                <td id="block2">
+                    <input type="text" name="co" value="{{ fc.comments }}">
+                </td>
+                </tr>
+
+
+
+
+            </tbody>
+
+        </table>
+         <input type="submit" value="save">
+
+         </form>
+    </div>
+</body>
+</html>

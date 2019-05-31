@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        #block1{
+            width: 600px;
+            height: 300px;
+        }
+        #block2{
+            width: 200px;
+            height: 800px;
+        }
+    </style>
+
+</head>
+<body>
+<h3>SARMS</h3>
+
+ <div>
+        <table border="1">
+            <thead>
+            <tr>
+                <tr>
+                    Unit: SIT321
+                </tr>
+                <tr>
+                 {{ st.student_name }}: Feedback and comments
+                </tr>
+            </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                <td id="block1">
+                    {{ fc.feedback}}
+                </td>
+                <td id="block2">
+                    {{ fc.comments }}
+                </td>
+
+
+
+
+
+
+
+
+                </tr>
+
+            </tbody>
+
+        </table>
+        <button> <a href="/edit_FC?nid={{ st.student_AP_id }}">add</a></button>
+        <button> <a href="/edit_FC?nid={{ st.student_AP_id }}">amend</a></button>
+    </div>
+</body>
+</html>

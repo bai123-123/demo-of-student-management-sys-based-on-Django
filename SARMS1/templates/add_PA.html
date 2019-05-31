@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="edit_students.html">
+        {% csrf_token %}
+        <input type="text" name="id" value="{{ nid}}" style="display: none">
+        <p>week_num<input type="text" name="week" value="week the student in"></p>
+        <p>attendance<input type="text" name="a" value="M/A"></p>
+        <p>performance<input type="text" name="p" value="HD/D/C"></p>
+
+
+        <input type="submit" value="submit">
+    </form>
+
+</body>
+</html>

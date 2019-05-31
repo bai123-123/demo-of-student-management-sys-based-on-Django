@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+  <div>
+        <table border="1">
+            <thead>
+            <tr>
+                <tr>
+                    Unit: SIT321
+                </tr>
+                <tr>
+                 attendance/performance
+                </tr>
+            </tr>
+                <tr>
+                    <th>ID</th>
+                    <th>name</th>
+                    <th>week1</th>
+                     <th>week2</th>
+                     <th>week3</th>
+                     <th>week4</th>
+                     <th>week5</th>
+                     <th>week6</th>
+                     <th>week7</th>
+                     <th>week8</th>
+                     <th>week9</th>
+                     <th>week10</th>
+                    <th>operations</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>
+                    {{ st.student_ID}}
+                </td>
+                <td>
+                    {{ st.student_name }}
+                </td>
+
+
+
+
+                             <td>
+                             {{ ap.week1_A }}
+                             |
+                             {{ ap.week1_p }}
+                             </td>
+                             <td>
+                             {{ ap.week2_A }}
+                             |
+                             {{ ap.week2_p }}
+                             </td>
+                             <td>
+                             {{ ap.week3_A }}
+                             |
+                             {{ ap.week3_p }}
+                             </td>
+                              <td>
+                             {{ ap.week4_A }}
+                             |
+                             {{ ap.week4_p }}
+                             </td>
+                             <td>
+                             {{ ap.week5_A }}
+                             |
+                             {{ ap.week5_p }}
+                             </td>
+                             <td>
+                             {{ ap.week6_A }}
+                             |
+                             {{ ap.week6_p }}
+                             </td>
+                              <td>
+                             {{ ap.week7_A }}
+                             |
+                             {{ ap.week7_p }}
+                             </td>
+                              <td>
+                             {{ ap.week8_A }}
+                             |
+                             {{ ap.week8_p }}
+                             </td>
+                              <td>
+                             {{ ap.week9_A }}
+                             |
+                             {{ ap.week9_p }}
+                             </td>
+                             <td>
+                             {{ ap.week10_A }}
+                             |
+                             {{ ap.week10_p }}
+                             </td>
+
+
+
+                     <td>
+                        <a href="/edit_AP?nid={{ st.student_AP_id }}">add</a>
+                        |
+                        <a href="/edit_AP?nid={{ st.student_AP_id }}">amend</a>
+
+                     </td>
+
+
+                </tr>
+
+            </tbody>
+
+        </table>
+    </div>
+
+
+</body>
+</html>

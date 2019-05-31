@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>name</th>
+
+                    <th>operations</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for row in stu_list %}
+                <tr>
+                <td>
+                    {{ row.student_ID}}
+                </td>
+                <td>
+                    {{ row.student_name }}
+                </td>
+
+                <td>
+                    <a href="/AP?nid={{ row.student_AP_id }}">Performance/Attendance</a>
+                    |
+                    <a href="/FC?nid={{ row.student_FC_id }}">Feedback/Comment</a>
+                </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+
+        </table>
+    </div>
+
+
+
+
+</body>
+</html>
